@@ -6,8 +6,8 @@ export function App(){
 
     return (
         
-        <section className="contenedor-cards">
-            <TwitterFollowCard>
+        <section className="contenedor-cards" > 
+            <TwitterFollowCard initialIsFollowing>
                 Miguel Ángel Durán
             </TwitterFollowCard>
             <TwitterFollowCard username="danichu_18">

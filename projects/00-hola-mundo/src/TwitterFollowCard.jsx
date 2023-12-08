@@ -1,7 +1,7 @@
 import {useState} from "react"  
-export function TwitterFollowCard({children, username = "unknown" }){
+export function TwitterFollowCard({children, username = "unknown", initialIsFollowing }){
     //ESTADO DE SEGUIMINETO - 1 PARAMETRO ES EL ESTADO(FALSE) Y EL SEGUNDO ES PARA CAMBIARLO
-    const [isFollowing, setIsFollowing] = useState(false)
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
     //MANEJADOR, CAMBIAR ESTADO DE SEGUIMIENTO, LA LLAMADA SE HACE EN EL BUTTON CON UN ONCLICK
     const handleClick = () => {
@@ -25,7 +25,8 @@ export function TwitterFollowCard({children, username = "unknown" }){
             </header>
             <aside >
                 <button className={buttonClassName} onClick={handleClick}>
-                    {text}
+                    <span className="tw-follow">{text}</span>
+                    <span className="tw-stop-follow">Dejar de seguir</span>
                 </button>
             </aside>
         </article>
