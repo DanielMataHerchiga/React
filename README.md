@@ -1,4 +1,4 @@
-"Curso de React" 
+Curso de React 
 
 The first thing we need to do, as seen in the image below, is to create a Vite@latest, give it a name, and choose a framework and variant:
 
