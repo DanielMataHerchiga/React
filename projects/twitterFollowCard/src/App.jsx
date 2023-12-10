@@ -12,5 +12,6 @@ export function App() {
         </TwitterFollowCard>
     </section>
   )
+  
 }
 
